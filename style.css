@@ -11,9 +11,11 @@
 body {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	min-height: 100vh;
 	margin: 0 auto;
 	max-width: 960px;
+	font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -26,6 +28,27 @@ header > section {
 	flex: 0 1 50%;
 }
 
+h1 {
+	font-family: "PT Serif", serif;
+	font-weight: 700;
+	font-size: 2.25rem;
+	line-height: 3rem;
+	letter-spacing: -0.045em;
+}
+
+h2 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-size: 1.125rem;
+	text-transform: uppercase;
+}
+
+header p {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 1.125rem;
+}
+
 main {
 	display: flex;
 	flex-flow: row wrap;
@@ -34,8 +57,9 @@ main {
 
 figure {
 	position: relative;
-	flex: 0 0 33%;
-	padding: 0 2rem;
+	flex: 0 0 30%;
+	padding: 0;
+	padding-right: 1.625rem;
 	margin: 0;
 }
 
@@ -50,12 +74,43 @@ figure h3 {
 	right: 0;
 	transform-origin: top right;
 	transform: rotate(90deg) translateX(100%);
+
+	font-family: "PT Serif", serif;
+	font-weight: 400;
+	font-size: 0.75rem;
+	line-height: 1rem;
+	text-transform: uppercase;
 }
 
 img {
 	max-width: 100%;
+	display: block;
+}
+
+figcaption {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-size: 1.125rem;
+	margin-top: 15px;
 }
 
 footer {
 	text-align: center;
+	margin-top: 1.5rem;
+	padding: 1.5rem auto;
+}
+
+footer p {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 0.875rem;
+	color: #a9a9a9;
+}
+
+footer a {
+	font-weight: 700;
+}
+
+footer a:visited {
+	color: inherit;
 }

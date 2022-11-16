@@ -1,0 +1,61 @@
+:root {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+header > h1,
+header > section {
+	flex: 0 1 50%;
+}
+
+main {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+figure {
+	position: relative;
+	flex: 0 0 33%;
+	padding: 0 2rem;
+	margin: 0;
+}
+
+figure:nth-child(3n-1) {
+	margin-top: 6rem;
+}
+
+figure h3 {
+	position: absolute;
+	margin: 0;
+	top: 0;
+	right: 0;
+	transform-origin: top right;
+	transform: rotate(90deg) translateX(100%);
+}
+
+img {
+	max-width: 100%;
+}
+
+footer {
+	text-align: center;
+}

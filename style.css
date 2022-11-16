@@ -21,6 +21,8 @@ body {
 header {
 	display: flex;
 	justify-content: space-between;
+	margin-top: 6.875rem;
+	margin-bottom: 4rem;
 }
 
 header > h1,
@@ -96,7 +98,7 @@ figcaption {
 
 footer {
 	text-align: center;
-	margin-top: 1.5rem;
+	margin-top: 10vh;
 	padding: 1.5rem auto;
 }
 
@@ -113,4 +115,46 @@ footer a {
 
 footer a:visited {
 	color: inherit;
+}
+
+@media (max-width: 984px) {
+	body {
+		margin: 0 0.75rem;
+	}
+}
+
+@media (max-width: 700px) {
+	header {
+		flex-direction: column;
+		gap: 2.375rem;
+		margin-top: 4.5rem;
+	}
+
+	header p {
+		font-size: 0.875rem;
+		padding-right: 1.125rem;
+	}
+
+	figure {
+		flex: 0 0 46%;
+		padding-right: 1rem;
+	}
+
+	figure:nth-child(3n-1) {
+		margin-top: unset;
+	}
+
+	figure:nth-child(even) {
+		margin-top: 4rem;
+	}
+
+	figure h3 {
+		font-size: 0.625rem;
+		line-height: 0.8125rem;
+	}
+
+	figcaption {
+		font-size: 0.875rem;
+		margin-top: 10px;
+	}
 }

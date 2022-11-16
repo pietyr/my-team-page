@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://pietyr.github.io/404-not-found/">
+    <a href="https://pietyr.github.io/my-team-page/">
       Demo
     </a>
     <span> | </span>
@@ -49,9 +49,8 @@
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
--   [React](https://reactjs.org/)
--   [Vue.js](https://vuejs.org/)
--   [Tailwind](https://tailwindcss.com/)
+-   HTML
+-   CSS
 
 ## Features
 
